@@ -1,28 +1,24 @@
 {
-  "name": "@aws-crypto/crc32",
-  "version": "3.0.0",
+  "name": "myapp6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "prepublishOnly": "tsc",
-    "pretest": "tsc -p tsconfig.test.json",
-    "test": "mocha --require ts-node/register test/**/*test.ts"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:aws/aws-sdk-js-crypto-helpers.git"
-  },
-  "author": {
-    "name": "AWS Crypto Tools Team",
-    "email": "aws-cryptools@amazon.com",
-    "url": "https://docs.aws.amazon.com/aws-crypto-tools/index.html?id=docs_gateway#lang/en_us"
-  },
-  "homepage": "https://github.com/aws/aws-sdk-js-crypto-helpers/tree/master/packages/crc32",
-  "license": "Apache-2.0",
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "@aws-crypto/util": "^3.0.0",
-    "@aws-sdk/types": "^3.222.0",
-    "tslib": "^1.11.1"
-  },
-  "gitHead": "7f56cee8f62bd65cd397eeec29c3c997215bd80c"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.11.2",
+    "mongoose-to-swagger": "^1.4.0",
+    "mongoose-unique-validator": "^3.1.0",
+    "swagger-ui-express": "^4.6.2",
+    "winston": "^3.8.2",
+    "winston-daily-rotate-file": "^4.7.1",
+    "winston-mongodb": "^5.1.1"
+  }
 }
